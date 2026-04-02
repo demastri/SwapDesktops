@@ -2,6 +2,10 @@ import sys
 import os
 import pyvda
 
+reIconPath = "C:\LocalDev\Desktops/ReIcon_x64.exe"
+reIconPath = "C:/Users/john/Desktop/ReIcon/ReIcon/ReIcon_x64.exe"
+
+
 # get the command line target
 if len(sys.argv) < 3:
     print("Usage: python swapDesktop.py <target desktop name> <target icon set>")
@@ -14,7 +18,7 @@ else:
     for desktop in desktops:
         if desktop.name == target:
             desktop.go()
-            os.system( "C:/Users/john/Desktop/ReIcon/ReIcon/ReIcon_x64.exe /Restore /ID "+iconLayout )
+            os.system( reIconPath+" /Restore /ID "+iconLayout )
             break
 
 # running this from the command line would be:

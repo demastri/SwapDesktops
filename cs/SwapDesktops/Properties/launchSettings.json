@@ -1,8 +1,7 @@
 {
   "profiles": {
     "SwapDesktops": {
-      "commandName": "Project",
-      "commandLineArgs": "Home"
+      "commandName": "Project"
     }
   }
 }
